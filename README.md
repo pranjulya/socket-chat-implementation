@@ -52,3 +52,6 @@ This project is a proof of concept (POC) for a chat application using the follow
 - The backend will use Socket.IO for real-time communication.
 - The frontend will connect to the backend via WebSocket for live chat updates.
 - Chat history will be fetched from the database and displayed in the Angular app.
+
+## Additional Information
+- The frontend uses the `socket.io-client` package for WebSocket communication.
