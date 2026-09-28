@@ -1,26 +1,28 @@
 # Chat Application POC
 
+> **Status: planned, no code yet.** This repository currently contains only this README. It describes the intended design for a proof-of-concept chat application; the backend, frontend and database schema below have not been implemented.
+
 ## Overview
-This project is a proof of concept (POC) for a chat application using the following technologies:
+This project is a planned proof of concept (POC) for a real-time chat application using the following technologies:
 
 - **Backend**: Node.js with Express and Socket.IO
 - **Frontend**: Angular
 - **Database**: PostgreSQL or MySQL
 
-## Features
+## Planned Features
 - Real-time chat using WebSockets (Socket.IO).
 - Chat history stored in a relational database.
 - Two database tables: `chat_conversation` and `chat_message`.
 
-## Folder Structure
+## Planned Folder Structure
 ```
 /socket-chat
-|-- backend/       # Node.js server
-|-- frontend/      # Angular application
+|-- backend/       # Node.js server (not yet created)
+|-- frontend/      # Angular application (not yet created)
 |-- README.md      # Project documentation
 ```
 
-## Database Schema
+## Planned Database Schema
 ### Table: `chat_conversation`
 - `id` (Primary Key): Unique identifier for the conversation.
 - `name`: Name of the conversation (e.g., group name).
@@ -33,25 +35,10 @@ This project is a proof of concept (POC) for a chat application using the follow
 - `message`: The chat message content.
 - `sent_at`: Timestamp when the message was sent.
 
-## Setup Instructions
-1. **Backend**:
-   - Navigate to the `backend` folder.
-   - Install dependencies: `npm install`.
-   - Start the server: `npm start`.
-
-2. **Frontend**:
-   - Navigate to the `frontend` folder.
-   - Install dependencies: `npm install`.
-   - Start the Angular app: `ng serve`.
-
-3. **Database**:
-   - Set up a PostgreSQL or MySQL database.
-   - Create the tables using the schema provided above.
-
-## Implementation Details
+## Planned Implementation
 - The backend will use Socket.IO for real-time communication.
-- The frontend will connect to the backend via WebSocket for live chat updates.
+- The frontend will connect to the backend via WebSocket, using the `socket.io-client` package, for live chat updates.
 - Chat history will be fetched from the database and displayed in the Angular app.
 
-## Additional Information
-- The frontend uses the `socket.io-client` package for WebSocket communication.
+## Setup
+There is nothing to install or run yet. Setup instructions will be added once the `backend/` and `frontend/` code is committed.
